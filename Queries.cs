@@ -34,7 +34,7 @@ public class ProductType : ObjectType<Product>
 public static class ProductQueries
 {
     [NodeResolver]
-    public static Product GetProducts(ProductId id)
+    public static Product GetProduct(ProductId id)
     {
         return new Product { Id = id, Name = "Book" };
     }
